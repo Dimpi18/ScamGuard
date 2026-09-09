@@ -1,0 +1,68 @@
+# ============================================================
+# ScamGuard Root .gitignore — Strict Security & Build Exclusions
+# ============================================================
+
+# --- Secrets, API Keys & Environment Variables (CRITICAL) ---
+.env
+.env.*
+!.env.example
+*.env
+api.txt
+*api_key*
+*secret*
+*.pem
+*.key
+*.cert
+*.pfx
+
+# --- Python & Virtual Environments ---
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+env/
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.mypy_cache/
+
+# --- Node.js & Next.js Builds ---
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+build/
+dist/
+*.tsbuildinfo
+frontend/*.tsbuildinfo
+next-env.d.ts
+
+# --- Logs & Debugging ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Operating System & IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# --- Temporary & Scratch Files ---
+scratch/
+*/scratch/
+.system_generated/

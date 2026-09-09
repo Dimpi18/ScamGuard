@@ -1,0 +1,13 @@
+# Backend-specific gitignore
+.env
+.env.*
+!.env.example
+*.env
+api.txt
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
